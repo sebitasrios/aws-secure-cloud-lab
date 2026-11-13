@@ -40,3 +40,37 @@ Se verificó la conectividad HTTPS, la autenticación del emulador y la respuest
 
 ## Próxima actividad
 Crear un bucket S3 y comprobar los controles de privacidad disponibles en AWS Emulator.
+
+## Resultados de las pruebas S3
+
+### Creación del bucket
+Se creó correctamente el bucket `seminario-seguridad-s3` mediante AWS CLI.
+
+### Configuración de acceso público
+La consulta `get-public-access-block` devolvió los cuatro controles configurados en `true`:
+
+- BlockPublicAcls
+- IgnorePublicAcls
+- BlockPublicPolicy
+- RestrictPublicBuckets
+
+### Almacenamiento y cifrado
+Se subió el archivo `prueba-s3.txt` y se verificó su existencia mediante `list-objects-v2`.
+
+La respuesta del emulador informó cifrado del lado del servidor `AES256` (SSE-S3).
+
+### Prueba de acceso anónimo
+Se intentó descargar el archivo mediante una solicitud sin firma (`--no-sign-request`).
+
+**Resultado:** `AccessDenied`.
+
+### Prueba de acceso autenticado
+Se descargó el mismo archivo utilizando el perfil `aws-emulator`.
+
+**Resultado:** operación exitosa. Se comprobó que el contenido descargado coincide con el archivo original.
+
+### Conclusión de seguridad
+AWS Emulator rechazó la solicitud anónima y permitió la solicitud autenticada. Estos resultados corresponden al comportamiento observado en el entorno simulado y no constituyen una validación completa de los controles de AWS real.
+
+### Próxima etapa
+Estudiar IAM y el principio de mínimo privilegio, verificando qué operaciones y restricciones permite simular AWS Emulator.
