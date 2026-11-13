@@ -1,0 +1,26 @@
+
+# Credenciales y configuraciones privadas
+.env
+.env.*
+!.env.example
+.aws/
+credentials
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Archivos temporales
+*.log
+tmp/
+temp/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
