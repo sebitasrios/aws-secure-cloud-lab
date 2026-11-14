@@ -301,16 +301,26 @@ El resultado es una base práctica para continuar aprendiendo sobre seguridad en
 
 ## Autor
 
+
+## Equipo de desarrollo
+
+Este proyecto fue desarrollado por estudiantes de Tecnología en Desarrollo de Software, con el propósito de fortalecer conocimientos prácticos en seguridad en la nube, redes y servicios AWS mediante un entorno de simulación local.
+
+### Integrantes
+
 **Sebastián Ríos**
+- GitHub: [sebitasrios](https://github.com/sebitasrios)
+- LinkedIn: [Perfil profesional](https://www.linkedin.com/in/sebastianriosdev/)
 
-Estudiante de Tecnología en Desarrollo de Software.
+**Ronal Andrés Ramírez Ortega**
+- GitHub: [Piccolo0850](https://github.com/Piccolo0850)
+- LinkedIn: [Perfil profesional](https://www.linkedin.com/in/ronal-ramirez-216775172/)
 
-Interesado en desarrollo backend, seguridad informática, redes y tecnologías cloud.
-
-**GitHub:** https://github.com/sebitasrios
-
-**LinkedIn:** https://www.linkedin.com/in/sebastianriosdev/
+**Juan Carlos Monsalve Restrepo**
+- GitHub: [JuanMR1017](https://github.com/JuanMR1017)
+- LinkedIn: [Perfil profesional](https://www.linkedin.com/in/juan-carlos-monsalve-restrepo-ba5935347/)
 
 ---
 
-*Proyecto desarrollado con fines educativos utilizando AWS Emulator local y Docker.*
+*Proyecto académico desarrollado con fines educativos utilizando AWS Emulator local, Docker y AWS CLI.*
+
